@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Hola este es mi primer proyecto</h1>
+<h2>{{bienvenida}}</h2>
+<ul>
+  <li *ngFor="let listas of lista">
+    {{listas}}
+  </li>
+</ul>
+
+<hr/>
+<h2>Hola soy {{name()}} y mi edad es {{age()}}</h2>
+
+<hr />
+<img  [src]="img" alt="">
+<input type="text" [value]="name()">
+<button [disabled]="true">Click aquí</button>
+<p>Nombre: {{person.name}}, edad {{person.age}}</p>
+<img [src]="person.avatar" alt="">
+<input type="text" [value]="disable">
+
+<hr/>
+<button (click)="clickAngular()">Clik 2</button>
+<p>(change)</p>
+<input type="number" [value]="person.age" (change)="inputChange($event)">
+
+<p>(Keydown)</p>
+<input type="text" [value]="person.name" (keydown)="keydown($event)">
+
+<hr />
+<input type="text" [value]="name()" (change)="inputChange($event)">
+
+</div>
