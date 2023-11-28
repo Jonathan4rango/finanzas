@@ -21,6 +21,7 @@ changeHandler(event: Event){
 }
 
 deleteTask(index: number){
+
 this.task.update((task)=> task.filter((task, posistion) => posistion !== index));
 }
 }
